@@ -1,3 +1,25 @@
+########
+# Path #
+########
+
+/opt/homebrew/bin/brew shellenv | source
+
+fish_add_path -gmP ~/.bun/bin
+fish_add_path -gmP ~/.config/.bin
+fish_add_path -gmP ~/.asdf/shims
+
+#############
+# Variables #
+#############
+
+set fish_greeting ""
+set -gx GPG_TTY (tty)
+set -gx HOMEBREW_NO_ENV_HINTS 1
+set -gx EDITOR nvim
+set -gx NODE_OPTIONS --openssl-legacy-provider
+set -gx SKIP_SIMPLE_GIT_HOOKS 1
+set -gx HUSKY 0
+
 ###########
 # Aliases #
 ###########
