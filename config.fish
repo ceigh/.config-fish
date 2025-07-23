@@ -19,13 +19,14 @@ set -gx EDITOR nvim
 set -gx NODE_OPTIONS --openssl-legacy-provider
 set -gx SKIP_SIMPLE_GIT_HOOKS 1
 set -gx HUSKY 0
+set -gx DO_NOT_TRACK 1
 
 ###########
 # Aliases #
 ###########
 
 alias v="$EDITOR"
-alias d="nr dev"
+alias d="ni run dev"
 alias gs="git status"
 alias gf="git diff"
 alias gff="gf HEAD"
