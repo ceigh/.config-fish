@@ -39,6 +39,16 @@ alias vpn="nvim -c 'set ft=jsonc' $HOMEBREW_PREFIX/etc/sing-box/config.json \
   && sudo brew services restart sing-box"
 alias htop="btop"
 alias top="btop"
+alias yarn="yarn --ignore-scripts"
+alias gen-pwd="openssl rand -base64 32"
+
+#######
+# SSH #
+#######
+
+if test "$TERM_PROGRAM" = "ghostty"
+  set -x TERM xterm-256color
+end
 
 #########
 # Debug #
