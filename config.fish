@@ -34,13 +34,16 @@ alias ga="git add"
 alias gm="git commit -m"
 alias gl="git log"
 alias gc="git checkout"
-alias tb="nc termbin.com 9999"
-alias vpn="nvim -c 'set ft=jsonc' $HOMEBREW_PREFIX/etc/sing-box/config.json \
-  && sudo brew services restart sing-box"
+# alias tb="nc termbin.com 9999"
 alias htop="btop"
 alias top="btop"
 alias yarn="yarn --ignore-scripts"
-alias gen-pwd="openssl rand -base64 32"
+alias yarna="sfw yarn add"
+alias buna="sfw bun add"
+alias npma="sfw npm add"
+alias yarni="sfw yarn install"
+alias buni="sfw bun install"
+alias npmi="sfw npm install"
 
 #######
 # SSH #
