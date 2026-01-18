@@ -20,6 +20,8 @@ set -gx NODE_OPTIONS --openssl-legacy-provider
 set -gx SKIP_SIMPLE_GIT_HOOKS 1
 set -gx HUSKY 0
 set -gx DO_NOT_TRACK 1
+set -gx PRISMA_HIDE_UPDATE_MESSAGE true
+set -gx BROWSERSLIST_IGNORE_OLD_DATA 1
 
 ###########
 # Aliases #
