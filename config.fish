@@ -14,8 +14,12 @@ fish_add_path -gmP ~/.cargo/bin/
 #############
 
 set fish_greeting ""
+set -g fish_prompt_pwd_dir_length 1
+set -g fish_prompt_pwd_full_dirs 2
+
 set -gx GPG_TTY (tty)
 set -gx HOMEBREW_NO_ENV_HINTS 1
+set -gx HOMEBREW_NO_ASK 1
 set -gx EDITOR nvim
 set -gx LAUNCH_EDITOR launch-editor-nvim
 set -gx NODE_OPTIONS --openssl-legacy-provider
@@ -39,9 +43,11 @@ alias ga="git add"
 alias gm="git commit -m"
 alias gl="git log"
 alias gc="git checkout"
+alias gp="git remote prune origin"
 alias htop="btop"
 alias top="btop"
 alias yarn="yarn --ignore-scripts"
+alias c="claude"
 
 #######
 # SSH #
